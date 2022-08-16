@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'ReUsableCard.dart';
 
 void main(List<String> args) {
@@ -14,7 +15,7 @@ class myApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        appBarTheme: AppBarTheme(backgroundColor: Colors.orange),
+        appBarTheme: AppBarTheme(backgroundColor: Color.fromARGB(255, 29, 150, 49)),
       ),
       home: homePage(),
     );
@@ -45,10 +46,12 @@ class _homePageState extends State<homePage> {
                 children: [
                   Expanded(
                     flex: 1,
-                    child: ReUsableCard(c: Colors.grey , t: "this is card 1" , i: Icons.access_alarm_outlined, tcolor: Colors.blueAccent,),
+                    //changed icon
+                    child: ReUsableCard(c: Colors.white , t: "Company Master" , i: FontAwesomeIcons.building, tcolor: Colors.blueAccent,),
                   ),
                   Expanded(flex: 1, 
-                  child: ReUsableCard(c: Colors.deepPurpleAccent , t : "this is card 2" , i: Icons.accessibility, tcolor: Colors.red,),
+                  //changed icon
+                  child: ReUsableCard(c: Colors.white , t : "Branch Master" , i: FontAwesomeIcons.userGear, tcolor: Colors.red,),
                   )
                 ],
               ) , 
@@ -58,10 +61,10 @@ class _homePageState extends State<homePage> {
                 children: [
                   Expanded(
                     flex: 1,
-                    child: ReUsableCard(c: Colors.grey , t: "this is card 1" , i: Icons.access_alarm_outlined, tcolor: Colors.blueAccent,),
+                    child: ReUsableCard(c: Colors.white , t: "Department Master" , i: FontAwesomeIcons.usersLine, tcolor: Colors.blueAccent,),
                   ),
                   Expanded(flex: 1, 
-                  child: ReUsableCard(c: Colors.deepPurpleAccent , t : "this is card 2" , i: Icons.accessibility, tcolor: Colors.red,),
+                  child: ReUsableCard(c: Colors.white , t : "Designation" , i: FontAwesomeIcons.locationDot, tcolor: Colors.red,),
                   )
                 ],
               ),
@@ -71,10 +74,10 @@ class _homePageState extends State<homePage> {
                 children: [
                   Expanded(
                     flex: 1,
-                    child: ReUsableCard(c: Colors.grey , t: "this is card 1" , i: Icons.access_alarm_outlined, tcolor: Colors.blueAccent,),
+                    child: ReUsableCard(c: Colors.white , t: "Office time Policy" , i: FontAwesomeIcons.hourglassStart, tcolor: Colors.blueAccent,),
                   ),
                   Expanded(flex: 1, 
-                  child: ReUsableCard(c: Colors.deepPurpleAccent , t : "this is card 2" , i: Icons.accessibility, tcolor: Colors.red,),
+                  child: ReUsableCard(c: Colors.white , t : "Shift Master" , i: FontAwesomeIcons.calendarCheck, tcolor: Colors.red,),
                   )
                 ],
               ),
@@ -84,10 +87,10 @@ class _homePageState extends State<homePage> {
                 children: [
                   Expanded(
                     flex: 1,
-                    child: ReUsableCard(c: Colors.grey , t: "this is card 1" , i: Icons.access_alarm_outlined, tcolor: Colors.blueAccent,),
+                    child: ReUsableCard(c: Colors.white , t: "Employee Master" , i: FontAwesomeIcons.userTag, tcolor: Colors.blueAccent,),
                   ),
                   Expanded(flex: 1, 
-                  child: ReUsableCard(c: Colors.deepPurpleAccent , t : "this is card 2" , i: Icons.accessibility, tcolor: Colors.red,),
+                  child: ReUsableCard(c: Colors.white , t : "Holiday Master" , i: FontAwesomeIcons.calendarDays , tcolor: Colors.red,),
                   )
                 ],
               ),
@@ -97,15 +100,16 @@ class _homePageState extends State<homePage> {
                 children: [
                   Expanded(
                     flex: 1,
-                    child: ReUsableCard(c: Colors.grey , t: "this is card 1" , i: Icons.access_alarm_outlined, tcolor: Colors.blueAccent,),
+                    child: ReUsableCard(c: Colors.white , t: "Leave Master " , i: FontAwesomeIcons.fileInvoice ,  tcolor: Colors.blueAccent,),
                   ),
                   Expanded(flex: 1, 
-                  child: ReUsableCard(c: Colors.deepPurpleAccent , t : "this is card 2" , i: Icons.accessibility, tcolor: Colors.red,),
+                  child: ReUsableCard(c: Colors.white , t : "Add Machine" , i: FontAwesomeIcons.screwdriverWrench , tcolor: Colors.red,),
                   )
                 ],
               ),
               SizedBox(height: 10,),
               //Row 6 : 
+              /*
               Row(
                 children: [
                   Expanded(
@@ -118,6 +122,7 @@ class _homePageState extends State<homePage> {
                 ],
               ),
               SizedBox(height: 10,),
+              // Row 7 : 
               Row(
                 children: [
                 Expanded(
@@ -129,6 +134,7 @@ class _homePageState extends State<homePage> {
                 )
               ],
               )
+              */
             ],
           ),
         ),
